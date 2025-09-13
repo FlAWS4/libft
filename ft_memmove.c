@@ -6,7 +6,7 @@
 /*   By: mshariar <mshariar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 16:05:10 by mshariar          #+#    #+#             */
-/*   Updated: 2024/10/28 15:12:53 by mshariar         ###   ########.fr       */
+/*   Updated: 2024/10/31 15:45:35 by mshariar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,11 +41,14 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 int	main()
 {
-	char src[20] = "Geeksfor";
-	char csrc[20] = "Geeksfor";
-	ft_memmove(src + 0, src, strlen(src) + 1);
-	memmove(csrc + 0, csrc, strlen(csrc) + 1);
+	char dest[0];
+	char cdest[0];
+	char *src = "I am moving";
+	char *csrc = "I am moving";
+	ft_memmove(dest, src, 0);
+	memmove(cdest, csrc, 0);
 	printf("%s\n", src);
 	printf("%s", csrc);
 	return 0;
-}*/
+}
+*/

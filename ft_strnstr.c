@@ -6,7 +6,7 @@
 /*   By: mshariar <mshariar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 21:38:23 by mshariar          #+#    #+#             */
-/*   Updated: 2024/10/24 15:01:16 by mshariar         ###   ########.fr       */
+/*   Updated: 2024/12/19 17:34:21 by mshariar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	find = 0;
 	if (little[find] == '\0')
 		return ((char *)(big));
-	while (big[i] != '\0' && i < len)
+	while (i < len && big[i] != '\0')
 	{
 		if (big[i] == little[0])
 		{
@@ -42,6 +42,6 @@ int	main()
 {
 	char str[20] = "can you find yau it?";
 	char to_find[] = "yau";
-	printf("%p\n", ft_strstr(str, to_find));
-	printf("%p\n", strstr(str, to_find));
+	printf("%p\n", ft_strnstr(str, to_find, 10));
+	printf("%p\n", strnstr(str, to_find, 10));
 }*/

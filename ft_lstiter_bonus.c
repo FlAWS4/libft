@@ -6,7 +6,7 @@
 /*   By: mshariar <mshariar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 14:11:30 by mshariar          #+#    #+#             */
-/*   Updated: 2024/10/30 17:51:05 by mshariar         ###   ########.fr       */
+/*   Updated: 2024/12/19 17:59:41 by mshariar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,12 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		lst = lst->next;
 	}
 }
-
+/*
 void	func(void *content)
 {
 	*(int *)content += 1;
 }
-/*
+
 int	main()
 {
 	int	*data1 = malloc(sizeof(int));

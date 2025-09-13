@@ -6,7 +6,7 @@
 /*   By: mshariar <mshariar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 14:45:04 by mshariar          #+#    #+#             */
-/*   Updated: 2024/10/28 16:33:36 by mshariar         ###   ########.fr       */
+/*   Updated: 2024/12/19 19:00:14 by mshariar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	j = 0;
 	d = ft_strlen(dst);
 	s = ft_strlen(src);
+	if (!dst || !src)
+		return (0);
 	if (size < d || size == 0)
 		return (s + size);
 	j = d;
@@ -36,12 +38,13 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	return (d + s);
 }
 /*
+# include <bsd/string.h>
 int	main(void)
 {
 	char	dest[20] = " come on";
 	char    dest1[20] = " come on";
-	char	src[] = " copy that";
-	char    src1[] = " copy that";
+	char	src[] = "";
+	char    src1[] = "";
 	printf("%zu\n %s\n", ft_strlcat(dest, src, 1), dest);
 	printf("%zu\n %s\n", strlcat(dest1, src1, 1), dest1);
 }*/

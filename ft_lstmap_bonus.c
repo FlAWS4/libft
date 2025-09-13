@@ -6,7 +6,7 @@
 /*   By: mshariar <mshariar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 14:21:28 by mshariar          #+#    #+#             */
-/*   Updated: 2024/10/30 18:17:07 by mshariar         ###   ########.fr       */
+/*   Updated: 2024/10/31 15:31:32 by mshariar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (newmap);
 }
-
 /*
 void	del(void *content)
 {
@@ -47,6 +46,7 @@ void	*count(void *content)
 	*(int *) content += 1;
 	return (content);
 }
+
 void	*cap(void *content)
 {
 	int i;
@@ -59,8 +59,8 @@ void	*cap(void *content)
 		i++;
 	}
 	return (content);
-		
 }
+
 int	main()
 {
 	int *first = malloc(sizeof(int));
@@ -89,4 +89,5 @@ int	main()
 	}
 	ft_lstclear(&newmap, del);
 	ft_lstclear(&list, del);
-}*/
+}
+*/
