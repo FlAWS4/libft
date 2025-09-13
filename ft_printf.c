@@ -6,7 +6,7 @@
 /*   By: mshariar <mshariar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 18:21:59 by mshariar          #+#    #+#             */
-/*   Updated: 2025/09/13 20:40:24 by mshariar         ###   ########.fr       */
+/*   Updated: 2025/09/13 20:42:45 by mshariar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -191,7 +191,8 @@ int main(void)
     printf("std: ");
     ret_std = printf("Mixed: %c %s %d %x %p %%\n", 'Z', "test", 123, 0xABC, &c);
     printf("ft : ");
-    ret_ft = ft_printf("Mixed: %c %s %d %x %p %%\n", 'Z', "test", 123, 0xABC, &c);
+	ret_ft = \
+	ft_printf("Mixed: %c %s %d %x %p %%\n", 'Z', "test", 123, 0xABC, &c);
     printf("Return values - std: %d, ft: %d\n\n", ret_std, ret_ft);
 
     printf("=== Test completed ===\n");
