@@ -6,7 +6,7 @@
 /*   By: mshariar <mshariar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 13:56:29 by mshariar          #+#    #+#             */
-/*   Updated: 2024/10/26 14:22:55 by mshariar         ###   ########.fr       */
+/*   Updated: 2025/09/13 20:29:11 by mshariar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,14 @@
 # include "unistd.h"
 # include "fcntl.h"
 # include "ctype.h"
+
+# define HEX_UPP_BASE "0123456789ABCDEF"
+# define HEX_LOW_BASE "0123456789abcdef"
+
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 10
+# endif
 
 typedef struct s_list
 {
