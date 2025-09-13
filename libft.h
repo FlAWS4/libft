@@ -6,7 +6,7 @@
 /*   By: mshariar <mshariar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 13:56:29 by mshariar          #+#    #+#             */
-/*   Updated: 2025/09/13 20:29:11 by mshariar         ###   ########.fr       */
+/*   Updated: 2025/09/13 20:34:51 by mshariar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,5 +80,19 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+//get_next_line
+char	*get_next_line(int fd);
+char	*ft_strjoin_gnl(char *s1, char *s2);
+
+//ft_printf
+int		ft_printf(char const *str, ...) __attribute__((format(printf, 1, 2)));
+int		ft_putchar_pf(char c, size_t *counter);
+void	ft_putstr(char *str, size_t *counter);
+void	ft_putnbr_pf(int num, size_t *counter);
+void	ft_putuint(unsigned int num, size_t *counter);
+void	ft_puthex(unsigned int num, size_t *counter, char *base);
+void	ft_putptr(void *ptr, size_t *counter);
+char	*ft_convertbase(size_t n, char *base);
 
 #endif
